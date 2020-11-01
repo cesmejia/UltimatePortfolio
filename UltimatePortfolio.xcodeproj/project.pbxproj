@@ -11,6 +11,11 @@
 		CA807461254EFF4000F9C92E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA807460254EFF4000F9C92E /* ContentView.swift */; };
 		CA807463254EFF4300F9C92E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA807462254EFF4300F9C92E /* Assets.xcassets */; };
 		CA807466254EFF4300F9C92E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA807465254EFF4300F9C92E /* Preview Assets.xcassets */; };
+		CA807470254F003300F9C92E /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA80746E254F003300F9C92E /* Main.xcdatamodeld */; };
+		CA807473254F05FE00F9C92E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA807472254F05FE00F9C92E /* DataController.swift */; };
+		CA807479254F4D8C00F9C92E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA807478254F4D8C00F9C92E /* CloudKit.framework */; };
+		CA80747C254F4F6900F9C92E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80747B254F4F6900F9C92E /* HomeView.swift */; };
+		CA80747F254F500E00F9C92E /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA80747E254F500E00F9C92E /* ProjectsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,12 @@
 		CA807462254EFF4300F9C92E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA807465254EFF4300F9C92E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA807467254EFF4300F9C92E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA80746F254F003300F9C92E /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		CA807472254F05FE00F9C92E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		CA807475254F4D6300F9C92E /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
+		CA807478254F4D8C00F9C92E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		CA80747B254F4F6900F9C92E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CA80747E254F500E00F9C92E /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA807479254F4D8C00F9C92E /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +50,7 @@
 			children = (
 				CA80745D254EFF4000F9C92E /* UltimatePortfolio */,
 				CA80745C254EFF4000F9C92E /* Products */,
+				CA807477254F4D8C00F9C92E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,11 +65,16 @@
 		CA80745D254EFF4000F9C92E /* UltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
+				CA807475254F4D6300F9C92E /* UltimatePortfolio.entitlements */,
 				CA80745E254EFF4000F9C92E /* UltimatePortfolioApp.swift */,
 				CA807460254EFF4000F9C92E /* ContentView.swift */,
+				CA80747B254F4F6900F9C92E /* HomeView.swift */,
+				CA80747E254F500E00F9C92E /* ProjectsView.swift */,
 				CA807462254EFF4300F9C92E /* Assets.xcassets */,
 				CA807467254EFF4300F9C92E /* Info.plist */,
 				CA807464254EFF4300F9C92E /* Preview Content */,
+				CA80746E254F003300F9C92E /* Main.xcdatamodeld */,
+				CA807472254F05FE00F9C92E /* DataController.swift */,
 			);
 			path = UltimatePortfolio;
 			sourceTree = "<group>";
@@ -67,6 +85,14 @@
 				CA807465254EFF4300F9C92E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA807477254F4D8C00F9C92E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA807478254F4D8C00F9C92E /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA80747F254F500E00F9C92E /* ProjectsView.swift in Sources */,
+				CA807470254F003300F9C92E /* Main.xcdatamodeld in Sources */,
+				CA807473254F05FE00F9C92E /* DataController.swift in Sources */,
 				CA807461254EFF4000F9C92E /* ContentView.swift in Sources */,
+				CA80747C254F4F6900F9C92E /* HomeView.swift in Sources */,
 				CA80745F254EFF4000F9C92E /* UltimatePortfolioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = FVH6V77N95;
@@ -289,6 +320,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = FVH6V77N95;
@@ -328,6 +360,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CA80746E254F003300F9C92E /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CA80746F254F003300F9C92E /* Main.xcdatamodel */,
+			);
+			currentVersion = CA80746F254F003300F9C92E /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CA807453254EFF4000F9C92E /* Project object */;
 }
